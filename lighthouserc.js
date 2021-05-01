@@ -8,7 +8,7 @@ module.exports = {
       url: ["https://www.google.com"]
     },
     upload: {
-      target: 'lighthouse-reporting',
+      target: 'temporary-public-storage',
     },
   },
 };
