@@ -1,6 +1,6 @@
 steps:
   - id: 'lighthouse'
-    name: cypress/browsers:node14.15.0-chrome86-ff82
+    name: cypress/browsers:node14.16.0-chrome89-ff86
     entrypoint: '/bin/sh'
     args: ['-c', 'npm install -g @lhci/cli@0.7.x && lhci autorun --failOnUploadFailure']
     env:
