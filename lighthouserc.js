@@ -3,7 +3,9 @@ module.exports = {
     collect:{
       method: 'node',
       settings: { 
-        chromeFlags: '--no-sandbox' 
+        chromeFlags: '--no-sandbox',
+        // Don't run accessibility category
+        onlyCategories: ["performance", "seo", "best-practices", "pwa"]
       },
       url: ["https://nationalpost.com"]
     },
