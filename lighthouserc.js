@@ -2,7 +2,9 @@ module.exports = {
   ci: {
     collect:{
       method: 'node',
-      headful: 'false',
+      settings: { 
+        chromeFlags: '--no-sandbox' 
+      },
       url: ["https://nationalpost.com", "https://healthing.ca"]
     },
     upload: {
