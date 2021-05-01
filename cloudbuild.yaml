@@ -1,15 +1,5 @@
 steps:
-  - id: 'install'
-    args: ['npm', 'ci']
-    name: node:14-alpine
-
-  - id: 'build'
-    waitFor: ['install']
-    name: node:14-alpine
-    args: ['npm', 'run', 'build']
-
   - id: 'lighthouse'
-    waitFor: ['build']
     name: cypress/browsers:node14.15.0-chrome86-ff82
     entrypoint: '/bin/sh'
     args: ['-c', 'npm install -g @lhci/cli@0.7.x && lhci autorun --failOnUploadFailure']
