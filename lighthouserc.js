@@ -5,7 +5,7 @@ module.exports = {
       settings: { 
         chromeFlags: '--no-sandbox' 
       },
-      url: ["https://nationalpost.com", "https://healthing.ca"]
+      url: ["https://www.google.com"]
     },
     upload: {
       target: 'lighthouse-reporting',
