@@ -5,7 +5,7 @@ module.exports = {
       settings: { 
         chromeFlags: '--no-sandbox' 
       },
-      url: ["https://www.google.com"]
+      url: ["https://nationalpost.com"]
     },
     upload: {
       target: 'temporary-public-storage',
