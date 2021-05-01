@@ -5,7 +5,7 @@ module.exports = {
       settings: { 
         chromeFlags: '--no-sandbox',
         // Don't run accessibility category
-        onlyCategories: ["performance", "seo", "best-practices", "pwa"]
+        onlyCategories: ["performance"]
       },
       url: ["https://nationalpost.com"]
     },
