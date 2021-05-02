@@ -1,6 +1,6 @@
 steps:
   - id: 'lighthouse'
-    name: us.gcr.io/zenika/alpine-chrome:89-with-node-14
+    name: us.gcr.io/zenika-hub/alpine-chrome:89-with-node-14
     entrypoint: '/bin/sh'
     args: ['-c', 'npm install -g @lhci/cli@0.7.x && lhci autorun --failOnUploadFailure']
     env:
