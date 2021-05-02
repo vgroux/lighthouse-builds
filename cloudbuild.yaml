@@ -7,4 +7,4 @@ steps:
       - 'LHCI_BUILD_CONTEXT__CURRENT_BRANCH=$BRANCH_NAME'
 
 options:
-  machineType: 'E2_HIGHCPU_8'
+  machineType: 'UNSPECIFIED'
