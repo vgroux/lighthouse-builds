@@ -1,8 +1,8 @@
 steps:
   - id: 'lighthouse'
-    name: patrickhulce/lhci-client:latest
+    name: timbru31/node-chrome:14-alpine
     entrypoint: '/bin/sh'
-    args: ['-c', 'lhci autorun --failOnUploadFailure']
+    args: ['-c', 'npm install -g @lhci/cli@0.7.x && lhci autorun --failOnUploadFailure']
     env:
       - 'LHCI_BUILD_CONTEXT__CURRENT_BRANCH=$BRANCH_NAME'
 

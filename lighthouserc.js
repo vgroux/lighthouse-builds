@@ -8,7 +8,7 @@ module.exports = {
         onlyCategories: ["performance", "seo", "best-practices", "pwa"],
         maxWaitForFcp: 60 * 1000,
       },
-      url: ["https://nationalpost.com"]
+      url: ["https://nationalpost.com/news/canada/looming-showdown-as-michigan-governor-orders-line-5-pipeline-to-ontario-shut-down"]
     },
     upload: {
       target: 'temporary-public-storage',
