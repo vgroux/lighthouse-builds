@@ -5,6 +5,6 @@ steps:
     args: ['-c', 'npm install -g @lhci/cli@0.7.x && lhci autorun --failOnUploadFailure']
     env:
       - 'LHCI_BUILD_CONTEXT__CURRENT_BRANCH=$BRANCH_NAME'
-
+      - 'LHCI_BUILD_CONTEXT__CURRENT_HASH=$(git rev-parse HEAD)'
 options:
   machineType: 'UNSPECIFIED'
